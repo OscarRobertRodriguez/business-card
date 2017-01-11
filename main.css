@@ -22,6 +22,8 @@
 
 .back {
     transform: rotateX(180deg);
+    background: url("project assets/backPhoto.jpg") no-repeat;
+    background-size: cover;
 }
 
 /*Front of Card*/
@@ -31,10 +33,34 @@
     background-size: cover;
 }
 
-.card:hover .front {
-    transform: rotateX(5deg);
+
+.card:hover .front   {
+    transform: rotateX(10deg);
     box-shadow: 0 15px 15px lightgrey;
 }
+
+.card:hover .back {
+    box-shadow: 20px 15px 15px lightgrey;
+}
+
+/* animation code */
+
+[type="radio"] {
+    display: none;
+}
+
+[type="radio"]:checked ~ .front {
+    transform: rotateX(-180deg);
+}
+
+[type="radio"]:checked ~ .back {
+    transform:rotateX(0deg);
+}
+
+
+
+
+/*end animation */
 
 .frontIntro {
     position: relative;
@@ -46,7 +72,7 @@
     color: #fff;
     font-size: 45px;
     letter-spacing: 1px;
-    font-family: Arial;
+    font-family: Arial, serif;
 }
 
 .aboutMe, .bookmarkFront p {
@@ -58,6 +84,10 @@
     margin-left: 22px;
     top: 70px;
     left: 25px;
+}
+
+.aboutMe {
+    margin-right: 80px;
 }
 
 .frontIntro > p:nth-child(2) {
@@ -86,8 +116,7 @@
 }
 
 .front ul {
-    margin: 0;
-    margin-top: 30px;
+    margin: 30px 0 0;
     padding: 0;
     list-style: none;
 
@@ -95,8 +124,7 @@
 
 .front li {
     display: inline-block;
-    margin: 0 10px;
-    margin-left: 24px;
+    margin: 0 10px 0 24px;
 }
 
 .front a {
@@ -145,9 +173,6 @@
 
 /* flip code*/
 
-.back {
-transform:  rotateX(180deg);
-}
 
 
 
@@ -157,4 +182,44 @@ transform:  rotateX(180deg);
 /*Back Of Card*/
 
 
+.back img {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
 
+.back img:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    transform: rotateY(180deg);
+}
+
+
+
+
+#flipToFront[type="radio"]:checked ~ .front {
+    transform: rotateX(0deg);
+}
+
+#flipToFront[type="radio"]:checked ~ .back {
+    transform: rotateX(180deg);
+}
+
+
+
+
+.bottomName {
+    position: absolute;
+    bottom:10px;
+    left:20px;
+    background-color: #EFEDE0;
+    opacity:0.8;
+    border-radius:5px;
+}
+
+.bottomName p {
+    color:#7C30D2;
+    padding:5px;
+    margin: 0;
+}
