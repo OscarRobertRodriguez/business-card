@@ -113,7 +113,7 @@
 		"oA": 0,
 		"oAP": "\/build\/project assets\/enc2.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/project assets\/facebook.png": {
 		"ft": 32768,
@@ -121,7 +121,7 @@
 		"oA": 0,
 		"oAP": "\/build\/project assets\/facebook.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/project assets\/github1.png": {
 		"ft": 32768,
@@ -137,7 +137,7 @@
 		"oA": 0,
 		"oAP": "\/build\/project assets\/github2.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/project assets\/ic_flip_black_24dp_2x.png": {
 		"ft": 32768,
@@ -163,7 +163,7 @@
 		"oA": 0,
 		"oAP": "\/build\/project assets\/linkedin.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/project assets\/twitter.png": {
 		"ft": 32768,
@@ -171,25 +171,7 @@
 		"oA": 0,
 		"oAP": "\/build\/project assets\/twitter.png",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/build\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
+		"opt": 1
 		}
 	},
 "hooks": [
